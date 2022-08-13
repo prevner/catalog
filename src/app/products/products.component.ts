@@ -32,4 +32,13 @@ export class ProductsComponent implements OnInit {
 
   }
 
+  //création de ma méthode me permettant de supprimer un produit
+  handleDeleteProduct(p : any)
+  {
+    //je recherche l'index de mon projet
+    let index = this.products.indexOf(p)
+    this.products.splice(index,1)
+
+  }
+
 }
